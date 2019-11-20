@@ -4,7 +4,7 @@ const nuxtConfig: Configuration = {
   mode: 'universal',
   buildModules: ['@nuxt/typescript-build'],
   server: {
-    port: 3000,
+    port: 8000,
     host: 'localhost',
   },
   /*
