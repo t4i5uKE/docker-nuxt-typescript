@@ -1,7 +1,10 @@
 version: '3'
 services:
   node:
-    build: ./
+    build: 
+        context: ./
+        dockerfile: ./src/Dockerfile
+      
     working_dir: /home/node/app
     volumes:
       - ./:/home/node/app

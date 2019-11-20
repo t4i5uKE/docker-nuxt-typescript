@@ -1,6 +1,6 @@
-# app
+# sampleApps
 
-> My superior Nuxt.js project
+> My premium Nuxt.js project
 
 ## Build Setup
 
