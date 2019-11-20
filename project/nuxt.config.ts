@@ -1,6 +1,12 @@
-
-export default {
-  mode: 'spa',
+import { Configuration } from '@nuxt/types'
+ 
+const nuxtConfig: Configuration = {
+  mode: 'universal',
+  buildModules: ['@nuxt/typescript-build'],
+  server: {
+    port: 3000,
+    host: 'localhost',
+  },
   /*
   ** Headers of the page
   */
@@ -29,26 +35,22 @@ export default {
   */
   plugins: [
   ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
+  typescript: {
+    typeCheck: true,
+    ignoreNotFoundWarnings: true
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/eslint-module',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-  },
   /*
   ** Build configuration
   */
@@ -56,7 +58,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
-  }
+  },
+  srcDir: 'src/'
 }
+module.exports = nuxtConfig
