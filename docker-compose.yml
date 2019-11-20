@@ -3,8 +3,8 @@ services:
   node:
     build: 
         context: ./
-        dockerfile: ./src/Dockerfile
-    working_dir: /home/node/app/src
+        dockerfile: ./project/Dockerfile
+    working_dir: /home/node/app/project
     volumes:
       - ./:/home/node/app
     ports:
