@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxt/typescript-runtime": "^0.2.4",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxt/types": "^0.3.4",
     "@nuxt/typescript-build": "^0.3.4",
-    "@nuxt/typescript-runtime": "^0.2.4",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
