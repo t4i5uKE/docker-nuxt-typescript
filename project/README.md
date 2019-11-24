@@ -366,7 +366,7 @@ The revised source is as follows.
 ```json:package.json
 # Partially omitted
 {
-  ...
+  # ...
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
@@ -374,7 +374,7 @@ The revised source is as follows.
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   }
-  ...
+  # ...
 }
 ```
 
